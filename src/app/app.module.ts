@@ -17,8 +17,10 @@ import { InfoComponent } from './info/info.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
-
-
+import { FormularioComponent } from './formulario/formulario.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 
 
@@ -30,7 +32,8 @@ import { FooterComponent } from './footer/footer.component';
     InfoComponent,
     SkillsComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    FormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -43,6 +46,10 @@ import { FooterComponent } from './footer/footer.component';
     MatProgressBarModule,
     MatCardModule,
     MatListModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
 
   ],
   providers: [],
