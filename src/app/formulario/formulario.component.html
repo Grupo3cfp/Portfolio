@@ -1,18 +1,39 @@
 <div class="conteiner-fluid">
-<form>
-  <div class="row">
-     <div class="col-md-12 text-center">
+  <form class="user-login" [formGroup]="loginForm" (ngSubmit)="onLogin()" class="formulario">
+    <div class="row">
+      <div class="col-md-12 text-center">
         <mat-form-field class="example-full-width">
           <mat-label>Email</mat-label>
-          <input matInput type="email">
+          <input matInput type="email" formControlName="email">
         </mat-form-field>
-     </div>
+      </div>
     </div>
     <div class="row">
       <div class="col-md-12 text-center">
         <mat-form-field class="example-full-width">
-          <mat-label>Password</mat-label>
-          <input matInput type="password">
+          <mat-label>Mensaje</mat-label>
+          <input matInput type="text" formControlName="mensaje">
+
+        </mat-form-field>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <mat-form-field class="example-full-width">
+          <mat-label>edad</mat-label>
+          <input matInput type="number" formControlName="edad">
+
+        </mat-form-field>
+
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <mat-form-field class="example-full-width">
+          <mat-label>nombre</mat-label>
+          <input matInput type="text" formControlName="nombre">
+
         </mat-form-field>
 
       </div>
@@ -20,9 +41,9 @@
     <br>
     <div class="row">
       <div class="col-md-12 text-center">
-        <button mat-raised-button type="submit" color="primary"> Apretame bb</button>
+        <button mat-raised-button type="submit" color="primary">Ingresar</button>
       </div>
     </div>
 
-</form>
+  </form>
 </div>
